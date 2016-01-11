@@ -30,9 +30,17 @@ body {
 	background-color: #f5f6f6;
 }
 
+.lnd.block.we-can-find,
+.lnd.block.cost-plus-model {
+	background-color: #373740;
+}
+
 .lnd.block.we-can-find {
 	height: 660px;
-	background-color: #373740;
+}
+
+.lnd.block.cost-plus-model {
+	height: 340px;
 }
 
 .lnd.block.how-it-works {
@@ -168,9 +176,14 @@ body {
 	font-weight: bold;
 }
 
-.prof-items {
+.prof-items,
+.cost-plus-items {
 	width: 100%;
 	justify-content: space-between;
+}
+
+.cost-plus-item p {
+	margin-left: 20px;
 }
 
 .margin-right-54 {
