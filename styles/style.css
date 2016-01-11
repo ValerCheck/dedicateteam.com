@@ -47,8 +47,9 @@ body {
 	background-color: white;
 }
 
-.lnd.block.whom-do-you-need {
-	height: 330px;
+.lnd.block.whom-do-you-need,
+.lnd.block.ready-to-begin {
+	height: 340px;
 	background-color: #222227;
 }
 
