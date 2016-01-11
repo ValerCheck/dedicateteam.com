@@ -44,6 +44,10 @@ body {
 	background-color: #222227;
 }
 
+.lnd.block.get-detailed-proposal {
+	height: 702px;
+}
+
 .lnd.block.title:before,
 .lnd.block.title:after {
 	content: '';
@@ -91,6 +95,30 @@ body {
 
 .lnd.block.best-solution:after {
 	background-image: url('./../images/block-6-background.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.lnd.block.get-detailed-proposal:before,
+.lnd.block.get-detailed-proposal:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: inherit;
+	z-index: -1;
+}
+
+.lnd.block.get-detailed-proposal:before {
+	background-color:#302f36;
+	opacity: 0.66;
+}
+
+.lnd.block.get-detailed-proposal:after {
+	background-image: url('./../images/block-9-background.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -186,6 +214,10 @@ body {
 .feat-list {
 	font-family: arial;
 	font-size: 16px;
+}
+
+.no-margin {
+	margin: 0;
 }
 
 .feat-list {
