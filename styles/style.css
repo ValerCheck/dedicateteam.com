@@ -27,6 +27,14 @@ body {
 
 .lnd.block.replenish-a-team {
 	height: 600px;
+}
+
+.lnd.block.something-else {
+	height: 700px;
+}
+
+.lnd.block.replenish-a-team,
+.lnd.block.something-else {
 	background-color: #f5f6f6;
 }
 
@@ -52,6 +60,8 @@ body {
 	height: 340px;
 	background-color: #222227;
 }
+
+
 
 .lnd.block.get-detailed-proposal {
 	height: 702px;
@@ -181,6 +191,12 @@ body {
 .cost-plus-items {
 	width: 100%;
 	justify-content: space-between;
+}
+
+.other-proposals-items {
+	justify-content: space-around;
+	width: 100%;
+	margin-top: 60px;
 }
 
 .cost-plus-item p {
@@ -384,6 +400,10 @@ body {
 	font-size: 24px;
 }
 
+.feat-button.black {
+	color: black;
+}
+
 .feat-button {
 	font-family: arial;
 	font-weight: bold;
@@ -396,8 +416,13 @@ body {
 	padding:21px 31px;
 }
 
-.feat-button:hover {
+.feat-button:hover,
+.feat-button.black:hover {
 	background-color: #ff7111;
+}
+
+.feat-button.black:hover {
+	color: #fff;
 }
 
 .feat-button:focus {
