@@ -13,6 +13,10 @@ body {
 	width: 100%;
 }
 
+.half-width {
+	width: 50%;
+}
+
 .height-inherit {
 	height: inherit;
 }
@@ -63,6 +67,11 @@ body {
 
 .lnd.block.contact-us {
 	height: 700px;
+}
+
+.lnd.block.footer {
+	height: 80px;
+	background-color: #1c1c20;
 }
 
 .lnd.block.whom-do-you-need,
@@ -201,6 +210,14 @@ body {
 	margin-top: 62px;
 }
 
+.flex-left {
+	justify-content: flex-start;
+}
+
+.flex-right {
+	justify-content: flex-end;
+}
+
 .flex-item {
 	text-align: center;
 }
@@ -290,6 +307,13 @@ body {
 .feat-list {
 	font-family: arial;
 	font-size: 16px;
+}
+
+.feat-a {
+	font-family: arial;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
 }
 
 .no-margin {
@@ -637,4 +661,8 @@ body {
 
 .pos-rel {
 	position: relative;
+}
+
+.social-profiles a {
+	margin: 0 5px;
 }
