@@ -2,7 +2,9 @@
 	<head>
 		<title>DedicateTeam</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="./styles/style.css">
+		<link rel="stylesheet" type="text/css" href="./styles/mobile-style.css">
 		<script src="./scripts/jquery-1.11.3.min.js"></script>
 		<script src="./scripts/helpers.js"></script>
 	</head>
@@ -10,9 +12,9 @@
 		<div class="block title">
 			<div class="block content">				
 				<div class="flex-container column with-last-child-fill" style="height:100%;">		
-					<div class="flex-container row" style="margin-top:36px;">
+					<div class="flex-container row mobile-column" style="margin-top:36px;">
 
-						<div class="flex-ul" style="order:1;">
+						<div class="flex-ul flex-container row order-1">
 							<div class="flex-li">
 								Что это
 							</div>
@@ -24,7 +26,7 @@
 							</div>
 						</div>
 						
-						<div class="flex-ul" style="order:3;">
+						<div class="flex-ul flex-container row order-3">
 							<div class="flex-li">
 								Преимущества
 							</div>
@@ -36,7 +38,7 @@
 							</div>
 						</div>
 						
-						<div class="center" style="order: 2;">
+						<div class="center order-2">
 							<span id="title"><span class="featured-color">Dedicate</span>Team.com</span>
 						</div>
 					
@@ -45,8 +47,8 @@
 					<div class="flex-container column last-child-fill">
 						<hr class="ruler margin-bottom-40"/>
 
-						<span class="title-l1">Аутстаффинг IT-персонала в Украине</span>
-						<span class="subtitle-l1">Мы пополним вашу команду IT-специалистами, о которых вы давно мечтали</span>
+						<div class="title-l1">Аутстаффинг IT-персонала в Украине</div>
+						<div class="subtitle-l1">Мы пополним вашу команду IT-специалистами, о которых вы давно мечтали</div>
 
 						<input class="feat-button margin-top-46" type="button" value="Узнать больше"/>
 					</div>
@@ -57,18 +59,19 @@
 		<div class="block about-outstaffing">
 			<div class="flex-container column">
 
-				<div class="flex-container row height-440px full-width">
+				<div class="flex-container row mobile-column height-440px full-width">
 					<div class="block simple-words">
-						<div class="flex-container row align-top margin-right-54" style="width: 64.22%; margin-left: auto">
-							<div style="margin-right: 22px;">
+						<div class="flex-container row mobile-column align-top mobile-align-center margin-right-54" style="width: 64.22%; margin-left: auto">
+							<div class="mobile-center" style="margin-right: 22px;">
 								<div class="empty equalizer"></div>
 								<img src="./images/block-2-simple-words-icon.png"/>
 							</div>
-							<div>
+							<div class="text-with-icon">
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h1 spacing">Аутстаффинг <br/>простыми словами</p>
-								<p class="feat-p">В вашей команде для счастья не хватает конкретного&nbsp;IT-&nbsp;специалиста.</p>
-								<p class="feat-p">Но у вас не хватает времени и ресурсов для того, чтобы&nbsp;найти достойного сотрудника.</p>
+								<p class="feat-p">В вашей команде для счастья не хватает
+								<br/>конкретног IT-специалиста.</p>
+								<p class="feat-p">Но у вас не хватает времени и ресурсов&nbsp;для того,&nbsp;чтобы&nbsp;найти достойного сотрудника.</p>
 								<p class="feat-p">К тому же его нужно обеспечить рабочим местом, оформить&nbsp;в штат и платить за него налоги.</p>
 							</div>
 						</div>
@@ -76,14 +79,14 @@
 					<div class="block simple-words image"></div>
 				</div>
 				
-				<div class="flex-container row-reverse height-440px full-width">
+				<div class="flex-container row-reverse mobile-column height-440px full-width">
 					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54" style="width: 64.22%;">
-							<div style="margin-right: 22px;">
+						<div class="flex-container row align-top margin-left-54 mobile-column" style="width: 64.22%;">
+							<div style="margin-right: 22px;" class="mobile-center">
 								<div class="empty equalizer"></div>
 								<img src="./images/block-2-avoid-icon.png"/>
 							</div>
-							<div>
+							<div class="text-with-icon">
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h3">Этого всего можна избежать</p>
 								<ul class="feat-list">
@@ -114,7 +117,7 @@
 					<span class="subtitle-l1 black center">в современном IT мире таким форматом построения команд пользуются многие</span>
 
 					<div class="flex-container row outstaff-reasons-list">
-						<div class="flex-container row baseline">
+						<div class="flex-container row baseline mobile-column">
 							<div class="flex-container column reason-item">
 								<img src="./images/block-3-money-economy-icon.png"/>
 								<span class="feat-text uppercase center">До 60%<br/>економии</span>
@@ -148,7 +151,7 @@
 						<hr class="ruler equalizer"/>
 						<span class="feat-h1 center spacing">Каких именно специалистов<br/>мы можем найти для вашей компании</span>
 
-						<div class="flex-container row prof-items">
+						<div class="flex-container row prof-items mobile-column">
 							<div class="flex-container column">
 								<div class="flex-container column prof-item">
 									<img src="./images/block-4-web-	icon.png"/>
@@ -200,9 +203,9 @@
 					<hr class="ruler equalizer"/>
 					<span class="feat-h1 center spacing">Как это работает на практике</span>
 				</div>
-				<div class="flex-container row full-width">
+				<div class="flex-container row full-width mobile-column">
 					<div class="block simple-words">
-						<div class="flex-container row align-top margin-right-54" style="width: 64.22%; margin-left: auto">
+						<div class="flex-container row align-top margin-right-54 mobile-center" style="width: 64.22%; margin-left: auto">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Знакомимся с вашей <br/>компанией и предпочтениями</p>
@@ -214,9 +217,9 @@
 					<div class="block how-it-works image-1"></div>
 				</div>
 				
-				<div class="flex-container row-reverse full-width">
+				<div class="flex-container row-reverse full-width mobile-column">
 					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54" style="width: 64.22%;">
+						<div class="flex-container row align-top margin-left-54 mobile-center" style="width: 64.22%;">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Находим нужного вам <br/>IT специалиста и нанимаем<br/>к себе в штат</p>
@@ -229,9 +232,9 @@
 					<div class="block how-it-works image-2"></div>
 				</div>
 
-				<div class="flex-container row full-width">
+				<div class="flex-container row full-width mobile-column">
 					<div class="block simple-words">
-						<div class="flex-container row align-top margin-right-54" style="width: 64.22%; margin-left: auto">
+						<div class="flex-container row align-top margin-right-54 mobile-center" style="width: 64.22%; margin-left: auto">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Менеджмент - с вас, <br/>уровень счастья - с нас</p>
@@ -243,9 +246,9 @@
 					<div class="block how-it-works image-3"></div>
 				</div>
 				
-				<div class="flex-container row-reverse full-width">
+				<div class="flex-container row-reverse full-width mobile-column">
 					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54" style="width: 64.22%;">
+						<div class="flex-container row align-top margin-left-54 mobile-center" style="width: 64.22%;">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Бесплатно заменяем<br/>сорудника по первому<br/>требованию</p>
@@ -267,15 +270,15 @@
 							<hr class="ruler margin-bottom-40"/>
 							<span class="feat-h1 spacing">Аутстаффинг сотрудников в Украине - лучшее решение для будущего вашей компании</span>
 						</div>
-						<div class="flex-container column last-child-fill">
-							<span class="subtitle-l1">№1 software engineering force in Central and Eastern Europe. </span>
+						<div class="flex-container column last-child-fill mobile-height-auto">
+							<span class="subtitle-l1 center">№1 software engineering force in Central and Eastern Europe. </span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="block whom-do-you-need">
+		<div class="block whom-do-you-need mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column">
@@ -292,13 +295,13 @@
 
 		<div class="block why-do-you-like-us">
 			<div class="flex-container column">
-				<div style="margin:40px 0">
+				<div style="margin:40px 0" class="mobile content center">
 					<hr class="ruler equalizer"/>
 					<span class="feat-h1 center spacing">Почему вам понравится работать с нами</span>
 				</div>
-				<div class="flex-container row full-width">
+				<div class="flex-container row full-width mobile-column">
 					<div class="block simple-words">
-						<div class="flex-container row align-top margin-right-54" style="width: 64.22%; margin-left: auto">
+						<div class="flex-container row align-top margin-right-54 mobile-center" style="width: 64.22%; margin-left: auto">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing-less">Ваши сотрудники будут работать в уютном офисе в центре Киева</p>
@@ -311,10 +314,10 @@
 					<div class="block why-do-you-like-us image-1"></div>
 				</div>
 				
-				<div class="flex-container row-reverse full-width">
+				<div class="flex-container row-reverse full-width mobile-column">
 					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54" style="width: 64.22%;">
-							<div>
+						<div class="flex-container row align-top margin-left-54 mobile-center" style="width: 64.22%;">
+							<div class="mobile-center">
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Сотрудничем с крупнейшей в Украине IT-академией “GoIT”</p>
 								<p class="feat-p">GoIT ежегодно выпускает более 1200 junior специалистов в 5-ти направлениях. В сообществе академии более 3000 специалистов, в том числе 80 преподавателей и менторов middle и senior уровня.</p>
@@ -325,9 +328,9 @@
 					<div class="block why-do-you-like-us image-2"></div>
 				</div>
 
-				<div class="flex-container row full-width">
+				<div class="flex-container row full-width mobile-column">
 					<div class="block simple-words">
-						<div class="flex-container row align-top margin-right-54" style="width: 64.22%; margin-left: auto">
+						<div class="flex-container row align-top margin-right-54 mobile-center" style="width: 64.22%; margin-left: auto">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing">Консалтинг по <br/>организации IT-проектов</p>
@@ -339,9 +342,9 @@
 					<div class="block why-do-you-like-us image-3"></div>
 				</div>
 				
-				<div class="flex-container row-reverse full-width">
+				<div class="flex-container row-reverse full-width mobile-column">
 					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54" style="width: 64.22%;">
+						<div class="flex-container row align-top margin-left-54 mobile-center" style="width: 64.22%;">
 							<div>
 								<hr class="ruler equalizer left"/>
 								<p class="feat-h2 spacing-less">Гибкий подход к вашей специфике и поиск индивидуальных решений</p>
@@ -354,10 +357,10 @@
 			</div>
 		</div>
 
-		<div class="block get-detailed-proposal pos-rel">
+		<div class="block get-detailed-proposal pos-rel mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
-					<div class="flex-container column">
+					<div class="flex-container column mobile-full-width center">
 						<p class="feat-p center" style="font-size:26px">...от 1 специалиста до целой команды...</p>
 						<p class="feat-p no-margin">
 							Чаще вслед за одним сотрудником мы подбираем для клиентов целые комманды, которые работают удаленно.
@@ -375,13 +378,13 @@
 			</div>
 		</div>
 
-		<div class="block cost-plus-model">
+		<div class="block cost-plus-model mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column full-width">
 						<span class="feat-h1 center spacing">Мы работаем по принципу cost+ model</span>
-						<div class="flex-container row cost-plus-items" style="margin-top: 20px;">
-							<div class="flex-container row cost-plus-item">
+						<div class="flex-container row cost-plus-items mobile-column" style="margin-top: 20px;">
+							<div class="flex-container row cost-plus-item mobile-column">
 								<img src="./images/block-10-free-search-icon.png"/>
 								<p class="feat-p">
 									Бесплатный поиск<br/>
@@ -389,7 +392,7 @@
 									cотрудника;
 								</p>
 							</div>
-							<div class="flex-container row cost-plus-item">
+							<div class="flex-container row cost-plus-item mobile-column">
 								<img src="./images/block-10-free-change-icon.png"/>
 								<p class="feat-p">
 									Бесплатная замена<br/>
@@ -397,7 +400,7 @@
 									необходимости;
 								</p>
 							</div>
-							<div class="flex-container row cost-plus-item">
+							<div class="flex-container row cost-plus-item mobile-column">
 								<img src="./images/block-10-fix-pay-result-icon.png"/>
 								<p class="feat-p">
 									После того, как cотрудник начал работу,<br/>
@@ -412,7 +415,7 @@
 			</div>
 		</div>
 
-		<div class="block ready-to-begin">
+		<div class="block ready-to-begin mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column">
@@ -427,7 +430,7 @@
 			</div>
 		</div>
 
-		<div class="block something-else">
+		<div class="block something-else mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column">
@@ -435,8 +438,8 @@
 							<hr class="ruler margin-bottom-40"/>
 							<span class="feat-h1 spacing-less black">Думаете о том, что вам нужно нечто другое?</span>
 						</div>
-						<span class="subtitle-l2 black" style="margin:0;">Посмотрите другие наши предложения.</span>
-						<div class="flex-container row other-proposals-items">
+						<span class="subtitle-l2 black center" style="margin:0;">Посмотрите другие наши предложения.</span>
+						<div class="flex-container row other-proposals-items mobile-column">
 							<div class="flex-container column text center">
 								<div style="flex-basis: 70px; display:flex; align-items: center;">
 									<img src="./images/block-12-8-relocate-logo.png" />
@@ -471,7 +474,7 @@
 			</div>
 		</div>
 
-		<div class="block our-partners">
+		<div class="block our-partners mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column full-width">
@@ -479,19 +482,29 @@
 							<hr class="ruler margin-bottom-40"/>
 							<span class="feat-h1 spacing black">С нами уже работают</span>
 						</div>
-						<div class="flex-container row partners-items">
-							<img src="./images/block-13-img-1.png"/>
-							<img src="./images/block-13-img-2.png"/>
-							<img src="./images/block-13-img-3.png"/>
-							<img src="./images/block-13-img-4.png"/>
-							<img src="./images/block-13-img-5.png"/>
+						<div class="flex-container row partners-items mobile-wrap">
+							<div>
+								<img src="./images/block-13-img-1.png"/>
+							</div>
+							<div>
+								<img src="./images/block-13-img-2.png"/>
+							</div>
+							<div>
+								<img src="./images/block-13-img-3.png"/>
+							</div>
+							<div>
+								<img src="./images/block-13-img-4.png"/>
+							</div>
+							<div>
+								<img src="./images/block-13-img-5.png"/>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="block turnkey-projects">
+		<div class="block turnkey-projects mobile-padding">
 			<div class="block content">
 				<div class="flex-container row height-inherit">
 					<div class="flex-container column full-width">
@@ -500,7 +513,7 @@
 							<span class="feat-h1 spacing">Реализованные под ключ проекты</span>
 						</div>
 						<div class="feat-slider">
-							<div class="flex-container row slider-items" style="height: 240px;">
+							<div class="flex-container row slider-items mobile-column" style="height: 240px;">
 								<div class="flex-container row slider-item">
 									<div class="flex-container column">
 										<span class="feat-p bold white" style="font-size:24px;">Dynamika.com.ua</span>
@@ -513,7 +526,7 @@
 									</div>
 								</div>
 
-								<div class="flex-container row slider-item hovered">
+								<div class="flex-container row slider-item hovered mobile-active">
 									<div class="flex-container column text justify" style="padding: 30px;">
 										<span class="feat-p bold white uppercase" style="font-size:24px;">Xjs</span>
 										<p class="feat-p">
@@ -539,7 +552,7 @@
 			</div>
 		</div>
 
-		<div class="block contact-us">
+		<div class="block contact-us mobile-padding">
 			<div class="block content">
 				<div class="flex-container row full-width height-inherit">
 					<div class="flex-container column" style="padding-top: 48px;">
@@ -582,11 +595,11 @@
 			</div>
 		</div>
 
-		<div class="block footer">
+		<div class="block footer mobile-padding">
 			<div class="block content">
-				<div class="flex-container row full-width height-inherit">
-					<div class="flex-container row half-width flex-left height-inherit">
-						<div class="flex-container row" style="margin-right:60px;">
+				<div class="flex-container row full-width height-inherit mobile-column">
+					<div class="flex-container row half-width flex-left height-inherit mobile-full-width mobile-column real-contacts">
+						<div class="flex-container row mobile-center" style="margin-right:60px;">
 							<img src="./images/footer-phone-icon.png" style="margin-right: 10px;"></img>
 							<span class="feat-p bold">(+380)68-30-84-784</span>
 						</div>
@@ -595,7 +608,7 @@
 							<a class="feat-a" href="mailto:hr@8relocate.com" class="feat-p bold">hr@8relocate.com</a>
 						</div>
 					</div>
-					<div class="flex-container row half-width flex-right social-profiles height-inherit">
+					<div class="flex-container row half-width flex-right social-profiles height-inherit mobile-full-width">
 						<a href="http://fb.com">
 							<img src="./images/footer-facebook-icon.png"></img>
 						</a>
