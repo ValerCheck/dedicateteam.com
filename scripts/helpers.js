@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function SetHeightOfLandTitle() {
 	
-	var headerFlex = $('.lnd.block.content .flex-container.with-last-child-fill');
+	var headerFlex = $('.block.content .flex-container.with-last-child-fill');
 
 	for(i=0;i<headerFlex.length;i++){
 		var headerChildren = $(headerFlex[i]).children();
