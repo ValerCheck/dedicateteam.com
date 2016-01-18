@@ -27,50 +27,27 @@
 		height: 100%;
 	}	
 
-	.block.title {
-		height: auto;
-	}	
-
-	.block.replenish-a-team {
-		height: auto;
-	}	
-
-	.block.something-else {
+	.block.title,
+	.block.replenish-a-team,
+	.block.cost-plus-model,
+	.block.whom-do-you-need,
+	.block.ready-to-begin,
+	.block.something-else,
+	.block.we-can-find,
+	.block.contact-us,
+	.block.our-partners,
+	.block.turnkey-projects,
+	.block.get-detailed-proposal,
+	.block.best-solution,
+	.block.footer {
 		height: auto;
 	}	
 
 	.block.we-can-find {
-		height: auto;
 		padding: 20px 0;
 	}	
 
-	.block.cost-plus-model {
-		height: auto;
-	}	
-
-	.block.whom-do-you-need,
-	.block.ready-to-begin {
-		height: auto;
-	}	
-
-	.block.contact-us {
-		height: auto;
-	}	
-
-	.block.our-partners {
-		height: auto;
-	}	
-
-	.block.turnkey-projects {
-		height: auto;
-	}	
-
-	.block.get-detailed-proposal {
-		height: auto;
-	}	
-
 	.block.best-solution {
-		height: auto;
 		background-color: rgba(55,55,64,0.44);
 	}	
 
@@ -91,7 +68,6 @@
 	}	
 
 	.block.footer {
-		height: auto;
 		background-color: #1c1c20;
 	}	
 
@@ -225,6 +201,8 @@
 	}	
 
 	.flex-container.mobile-column {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
 		flex-direction: column !important;
 		height: auto !important;
 		margin-left: auto !important;
@@ -237,6 +215,7 @@
 	}
 
 	.text-with-icon {
+		width: 100%;
 		-webkit-box-flex: 1.0;
 	}	
 
@@ -317,7 +296,13 @@
 		width: 167px;
 		border: 3px solid #ff7111;
 		border-radius: 50%;
-	}	
+		-webkit-box-orient: vertical;
+		-webkit-box-align: center;
+	}
+
+	.contact-item {
+		-webkit-box-align: center;	
+	}
 
 	.slider-item {
 		width: 100%;
@@ -474,6 +459,7 @@
 
 	.reason-item {
 		margin: 20px 0;
+		text-align: center;
 	}	
 
 	.reason-desc {
@@ -510,6 +496,8 @@
 	.mobile-center {
 		margin-left: auto !important;
 		margin-right: auto !important;
+		text-align: center;
+		-webkit-box-align: center;
 	}
 
 	.feat-text {
@@ -537,6 +525,7 @@
 		font-family: arial;
 		text-transform: uppercase;
 		margin: 2px;
+		font-size: 150%;
 		font-size: 8vmin;
 		font-weight: bold;
 		letter-spacing: 4px;
@@ -613,6 +602,7 @@
 		border: 3px solid #282828;
 		padding: 0 31px;
 		height: 60px;
+		-webkit-box-align: center;
 	}	
 
 	.feat-slider-btn.left,
@@ -740,6 +730,7 @@
 
 	.social-profiles a {
 		margin: 0 5px;
+		text-decoration: none;
 	}
 
 	.real-contacts > div {
