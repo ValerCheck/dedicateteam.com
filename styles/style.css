@@ -13,6 +13,10 @@ body {
 	height: inherit;
 }
 
+#menu-burger {
+	display: none;
+}
+
 .block,
 .full-width,
 .feat-slider,
