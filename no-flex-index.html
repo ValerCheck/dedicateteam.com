@@ -1,117 +1,170 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>DedicateTeam</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, min-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="./styles/style.css">
-		<link rel="stylesheet" type="text/css" href="./styles/mobile-style.css">
-		<script src="./scripts/jquery-1.11.3.min.js"></script>
-		<script src="./scripts/helpers.js"></script>
+		<link rel="stylesheet" type="text/css" href="./styles/no-flex-style.css">
+		<link rel="stylesheet" type="text/css" href="./styles/no-flex-mobile-style.css">
 	</head>
 	<body>
-		<a style="display: block;" href="no-flex-index.html">To no-flex version</a>
 		<div class="block title">
-			<div class="block content">				
-				<div class="flex-container column with-last-child-fill" style="height:100%;">		
-					<div class="flex-container row mobile-column header-menu" style="margin-top:36px;">
+			<div class="block content">
+				
+				<div class="top-menu mobile">
 
-						<div class="flex-ul flex-container row menu-li order-1">
-							<div class="flex-li">
-								Что это
-							</div>
-							<div class="flex-li">
-								Почему это выгодно
-							</div>
-							<div class="flex-li">
-								Как это работает
-							</div>
+					<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+					</input>
+
+					<div class="x-container column hidden-menu">
+						<div class="x-item li">
+							Что это
 						</div>
+						<div class="x-item li">
+							Почему это выгодно
+						</div>
+						<div class="x-item li">
+							Как это работает
+						</div>
+						<div class="x-item li">
+							Преимущества
+						</div>
+						<div class="x-item li">
+							Другие услуги
+						</div>
+						<div class="x-item li">
+							Связаться
+						</div>
+					</div>
 						
-						<div class="flex-ul flex-container row menu-li order-3">
-							<div class="flex-li">
-								Преимущества
+					<div class="x-container row title-container">
+						<span id="title">
+							<span class="featured-color dedicate-word">Dedicate</span>Team.com
+						</span>
+						<label class="btn-menu" for="hmt">
+							<span class="first"></span>
+							<span class="second"></span>
+							<span class="third"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="table title-content read-more">
+					<div class="tr cell-height-auto top-menu no-mobile">
+						<div class="td top-menu height-auto">
+							<div class="x-container row">
+								<div class="x-item li">
+									Что это
+								</div>
+								<div class="x-item li">
+									Почему это выгодно
+								</div>
+								<div class="x-item li">
+									Как это работает
+								</div>
 							</div>
-							<div class="flex-li">
-								Другие услуги
-							</div>
-							<div class="flex-li">
-								Связаться
+							
+							<div class="x-container row">
+								<span id="title">
+									<span class="featured-color">Dedicate</span>Team.com
+								</span>
+								<a href="#" id="menu-burger">
+									<span>Menu</span>
+								</a>
+							</div>	
+
+							<div class="x-container row">
+								<div class="x-item li">
+									Преимущества
+								</div>
+								<div class="x-item li">
+									Другие услуги
+								</div>
+								<div class="x-item li">
+									Связаться
+								</div>
 							</div>
 						</div>
-						
-						<div class="center order-2 title-text">
-							<span id="title">
-								<span class="featured-color">Dedicate</span>Team.com
-							</span>
-							<a href="#" id="menu-burger">
-								<span>Menu</span>
-							</a>
-						</div>
-					
 					</div>
 
-					<div class="flex-container column last-child-fill">
-						<hr class="ruler margin-bottom-40"/>
+					<div class="tr">
+						<div class="td">
+							<hr class="ruler before-mobile-menu margin-bottom-40"/>	
 
-						<div class="title-l1">Аутстаффинг IT-персонала в Украине</div>
-						<div class="subtitle-l1">Мы пополним вашу команду IT-специалистами, о которых вы давно мечтали</div>
+							<div class="title-l1">Аутстаффинг IT-персонала в Украине</div>
+							<div class="subtitle-l1">Мы пополним вашу команду IT-специалистами, о которых вы давно мечтали</div>	
 
-						<input class="feat-button margin-top-46" type="button" value="Узнать больше"/>
+							<input class="feat-button margin-top-46" type="button" value="Узнать больше"/>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="block about-outstaffing">
-			<div class="flex-container column">
-
-				<div class="flex-container row mobile-column height-440px full-width">
-					<div class="block simple-words">
-						<div class="flex-container row mobile-column align-top mobile-align-center margin-right-54" style="width: 64.22%; margin-left: auto">
-							<div class="mobile-center" style="margin-right: 22px;">
-								<div class="empty equalizer"></div>
-								<img src="./images/block-2-simple-words-icon.png"/>
+			<div class="flex-container row mobile-column height-440px full-width">
+				<div class="block simple-words fl-l">
+					<div class="v-center content right">
+						<div class="table what-is-it">
+							<div class="tr">
+								<div class="td height-auto"></div>
+								<div class="td height-auto">
+									<hr class="ruler equalizer left"/>
+								</div>
 							</div>
-							<div class="text-with-icon">
-								<hr class="ruler equalizer left"/>
-								<p class="feat-h1 spacing">Аутстаффинг <br/>простыми словами</p>
-								<p class="feat-p">В вашей команде для счастья не хватает
-								<br/>конкретног IT-специалиста.</p>
-								<p class="feat-p">Но у вас не хватает времени и ресурсов&nbsp;для того,&nbsp;чтобы&nbsp;найти достойного сотрудника.</p>
-								<p class="feat-p">К тому же его нужно обеспечить рабочим местом, оформить&nbsp;в штат и платить за него налоги.</p>
+							<div class="tr">
+								<div class="td top img-what-is-it">
+									<img src="./images/block-2-simple-words-icon.png"/>
+								</div>
+								<div class="td top black text-left">
+									<p class="feat-h1 spacing">Аутстаффинг <br/>простыми словами</p>
+									<p class="feat-p">В вашей команде для счастья не хватает
+									<br/>конкретног IT-специалиста.</p>
+									<p class="feat-p">Но у вас не хватает времени и ресурсов&nbsp;для того,&nbsp;чтобы&nbsp;найти достойного сотрудника.</p>
+									<p class="feat-p">К тому же его нужно обеспечить рабочим местом, оформить&nbsp;в штат и платить за него налоги.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="block simple-words image"></div>
 				</div>
+				<div class="block simple-words image fl-l"></div>
+			</div>
 				
-				<div class="flex-container row-reverse mobile-column height-440px full-width">
-					<div class="block how-avoid">
-						<div class="flex-container row align-top margin-left-54 mobile-column" style="width: 64.22%;">
-							<div style="margin-right: 22px;" class="mobile-center">
-								<div class="empty equalizer"></div>
-								<img src="./images/block-2-avoid-icon.png"/>
-							</div>
-							<div class="text-with-icon">
-								<hr class="ruler equalizer left"/>
-								<p class="feat-h3">Этого всего можна избежать</p>
-								<ul class="feat-list">
-									<li>
-										Мы найдем нужного вам IT-специалиста или&nbsp;даже&nbsp;целую команду.
-									</li>
-									<li>
-										Наймем его к себе в штат.
-									</li>
-									<li>
-										Оплатим за него налоги, страховку<br/> и другие затраты.
-									</li>
-									<li>И обеспечим рабочим местом.</li>
-								</ul>
-							</div>
-						</div>
+			<div class="flex-container row-reverse mobile-column height-440px full-width">
+				<div class="block how-avoid fl-r">
+					<div class="v-center content left">
+						<table class="what-is-it">
+							<tr>
+								<td></td>
+								<td>
+									<hr class="ruler equalizer left"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="top img-what-is-it">
+									<img src="./images/block-2-avoid-icon.png"/>
+								</td>
+								<td class="top black text-left">
+									<p class="feat-h3">Этого всего можна избежать</p>
+									<ul class="feat-list">
+										<li>
+											Мы найдем нужного вам IT-специалиста или&nbsp;даже&nbsp;целую команду.
+										</li>
+										<li>
+											Наймем его к себе в штат.
+										</li>
+										<li>
+											Оплатим за него налоги, страховку<br/> и другие затраты.
+										</li>
+										<li>И обеспечим рабочим местом.</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+							
 					</div>
-					<div class="block how-avoid image"></div>
 				</div>
+				<div class="block how-avoid image fl-r"></div>
 			</div>
 		</div>
 
