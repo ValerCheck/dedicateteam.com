@@ -34,11 +34,6 @@ a.feat-button {
 	display: inline-block;
 }
 
-.cost-plus-item {
-	display: block;
-	white-space: nowrap;
-}
-
 .reason-img {
 	height: 83px;
 }
@@ -46,6 +41,11 @@ a.feat-button {
 .text-break {
 	word-break: break-word;
 	white-space: pre-line;
+}
+
+.cost-plus-items .table {
+	border-collapse: separate;
+	margin-top: 20px;
 }
 
 .outstaff-reasons-list:after,
@@ -61,6 +61,26 @@ a.feat-button {
 	min-height: 303px;
 	height: auto;
 	overflow: hidden;
+}
+
+.td.cost-plus-item {
+	text-align: left;
+}
+
+.td.feat-p {
+	white-space: pre-line;
+}
+
+.td.cost-plus-item:nth-child(2n+1) {
+	border-right: 20px solid transparent;
+}
+
+.td.cost-plus-item:nth-child(3) {
+	border-left: 30px solid transparent;
+}
+
+.td.cost-plus-item:nth-child(4) {
+	border-right: 30px solid transparent;
 }
 
 .r-list {
@@ -306,7 +326,7 @@ td {
 }
 
 .block.cost-plus-model {
-	height: 340px;
+	/*height: 340px;*/
 }
 
 
@@ -314,8 +334,14 @@ td {
 	height: auto;
 }
 
-.block.our-partners {
-	height: 335px;
+.block.contact-us {
+	padding: 100px 0;
+}
+
+.block.our-partners,
+.block.cost-plus-model {
+	/*height: 335px;*/
+	padding: 70px 0;
 }
 
 .block.turnkey-projects {
