@@ -6,8 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1.0, min-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="./styles/no-flex-portfolio-style.css">
 		<link rel="stylesheet" type="text/css" href="./styles/no-flex-portfolio-mobile-style.css">
+		<script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="./scripts/no-flex-portfolio-helpers.js"></script>
 	</head>
 	<body>
+		<div class="overlay"></div>
+
 		<div class="block title">
 			<div class="block content">
 				
@@ -218,7 +222,7 @@
 							</div>
 						</div>
 
-					<input type="button" value="Оставить заявку" class="feat-button margin-top-46"></input>
+					<input type="button" value="Оставить заявку" class="feat-button margin-top-46 contact-form"></input>
 				</div>				
 				</div>
 			</div>
@@ -250,6 +254,21 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="./scripts/jquery-1.11.3.min.js"></script>
+
+		<div class="form_window">
+			<div class="bw_close"></div>
+			<div class="nameForm">
+				Send a request
+			</div>
+			<div>
+				<form class="form_just" action="#" method="post">
+			        <input name="name" type="text" class="input" placeholder="Name" required/>
+			        <input name="email" type="text" class="input" placeholder="E-mail" required/>
+			        <input name="phone" id="phone" type="text" class="input" placeholder="Phone" required/>
+			        <input name="comp" type="text" class="input" placeholder="Link to LinkedIn/GitHub" required/>
+			        <input type="button" value="Send a request" class=" feat-button black"/>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

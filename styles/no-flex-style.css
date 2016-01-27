@@ -238,6 +238,15 @@ table.what-is-it {
 	height:1px;
 }
 
+.slick-dots {
+	bottom: 0 !important;
+}
+
+.slick-dots li button:before {
+	color: white !important;
+	font-size: 15px !important;
+}
+
 .top-menu {
 	padding: 40px 0;
 }
@@ -413,7 +422,9 @@ td {
 }
 
 .block.turnkey-projects {
-	height: 640px;
+	/*height: 640px;*/
+	height: auto;
+	padding: 100px 0;
 }
 
 .block.get-detailed-proposal {
@@ -1211,4 +1222,59 @@ a.feat-slider-btn {
 	display: inline-block;
 	height: 100%;
 	vertical-align: middle;
+}
+
+.form_window {
+	display: none;
+	text-align: center;
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	width: 320px;
+	padding: 20px 50px 30px 50px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 35px #608971;
+	margin: 0 0 0 -210px;
+	color: #000;
+	z-index: 999;
+}
+
+.bw_close {
+	background:url('./../images/close.png') no-repeat;
+	width:22px;
+	height:21px;
+	position:absolute;
+	top:20px;
+	right:20px;
+	cursor:pointer
+}
+
+.overlay {
+	position:fixed;
+	background-image:url('./../images/overlay.png');
+	width:100%;
+	display:none;
+	height:100%;
+	z-index:30
+}
+
+.nameForm {
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.input {
+	background: #f9f6ef;
+	border-radius: 50px;
+	height: 45px;
+	width: 280px;
+	padding: 0 20px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	margin: 0 0 10px 0;
+	font-family: 'Roboto', sans-serif;
 }

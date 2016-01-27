@@ -7,11 +7,13 @@ $(document).ready(function() {
 		autoplaySpeed: 5000,
 		speed: 1000,
 		slidesToShow: 1,
+		arrows: false,
+		dots: true,
 		responsive: [
     		{
 	    		breakpoint: 860,
 		      	settings: {
-		        	arrows: true,
+		        	arrows: false,
 		        	centerMode: true,
 		        	slidesToShow: 1
 		    	}
@@ -19,7 +21,7 @@ $(document).ready(function() {
 		    {
 		      	breakpoint: 700,
 		      	settings: {
-		        	arrows: true,
+		        	arrows: false,
 		        	centerMode: true,
 		        	slidesToShow: 1
 		      	}
@@ -79,12 +81,6 @@ $(document).ready(function() {
 	  	]
 	});
 
-	/*$('#menu-item-1').click(function(){
-		var menuParent = $('#menu-item-1').parent();
-		console.log(menuParent.Id());
-		scrollToId('what-is-it');
-	});*/
-
 	$('.menu-item-1').click(function(){
 		scrollToId('what-is-it');
 		var isMobile = $(this).parent().hasClass('hidden-menu');
@@ -119,6 +115,17 @@ $(document).ready(function() {
 		scrollToId('contact-us');
 		var isMobile = $(this).parent().hasClass('hidden-menu');
 		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$(function() {
+    	$(".contact-form").click(function(){
+    		$('.form_window').fadeIn().addClass("windactiv");
+    		$(".overlay").fadeIn();
+	  	});
+	  	$(".mask, .bw_close").click(function(){
+	  		$(".windactiv").fadeOut();
+	  		$(".overlay").fadeOut();
+	  });
 	});
 
 });
