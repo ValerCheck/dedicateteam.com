@@ -330,7 +330,7 @@
 	}
 
 	.hidden-menu-ticker:checked ~ .hidden-menu {
-		top: 10%;
+		top: 15%;
 		height: 80%;
 	}
 

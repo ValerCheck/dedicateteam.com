@@ -276,6 +276,8 @@ td {
 
 .x-item.li {
 	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
 }
 
 .x-container > .x-item,

@@ -242,6 +242,10 @@ table.what-is-it {
 	padding: 40px 0;
 }
 
+.top-menu .x-item.li {
+	cursor: hand;
+}
+
 .black {
 	color: black;
 }

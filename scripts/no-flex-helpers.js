@@ -78,4 +78,52 @@ $(document).ready(function() {
 		    }
 	  	]
 	});
+
+	/*$('#menu-item-1').click(function(){
+		var menuParent = $('#menu-item-1').parent();
+		console.log(menuParent.Id());
+		scrollToId('what-is-it');
+	});*/
+
+	$('.menu-item-1').click(function(){
+		scrollToId('what-is-it');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$('.menu-item-2').click(function(){
+		scrollToId('why-profitably');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$('.menu-item-3').click(function(){
+		scrollToId('how-it-works');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$('.menu-item-4').click(function(){
+		scrollToId('advantages');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$('.menu-item-5').click(function(){
+		scrollToId('other-services');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
+	$('.menu-item-6').click(function(){
+		scrollToId('contact-us');
+		var isMobile = $(this).parent().hasClass('hidden-menu');
+		if (isMobile) $('#hmt').prop('checked',false);
+	});
+
 });
+
+function scrollToId(aid){
+	var aTag = $("div#" + aid + "");
+	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
