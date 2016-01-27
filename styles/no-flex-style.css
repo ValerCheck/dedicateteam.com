@@ -585,11 +585,23 @@ td {
 
 #title {
 	display: inline-block;
-	font-weight: bold;
-	font-size: 32px;
+	font-size: 55px;
 	font-family: 'Trebuchet MS';
 	text-shadow; 0px 2px black;
 	margin: 0 20px;
+	height: 50px;
+}
+
+.title-logo {
+	background-image: url('./../images/Logo.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+#title > * {
+	height: inherit;
 }
 
 .slick-prev:before,
@@ -1009,6 +1021,10 @@ td {
 	height: 60px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+a.feat-slider-btn {
+	text-decoration: none;
 }
 
 .feat-slider-btn.left,

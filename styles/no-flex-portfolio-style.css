@@ -349,30 +349,36 @@ td {
 	text-align: center;
 }
 
+.slider-item {
+	display: inline-block;
+}
+
 .slider-item .pre-content {
-	width: 30%;
+	display: table-cell;
+	width: 35%;
 	height: inherit;
-	float: left;
 	background-color: #252124;
 	color: white;
+	text-align: center;
+}
+
+
+.slider-item {
+	display: table;
 }
 
 .slider-item .content {
-	width: 69%;
+	display: table-cell;
+	width: 55%;
 	height: 100%;
-	float: left;
 	background-color: white;
 	color: black;
+	padding: 10px 5%;
+	word-break: break-word; 
 }
 
-.slider-item:before,
-.slider-item:after {
-	content: '';
-	display: block;
-}
-
-.slider-item:after {
-	clear: both;
+.slider-item .content .portfolio-item-title {
+	margin: 10px 0 5px 0;
 }
 
 .block.best-solution .slider {
@@ -494,11 +500,15 @@ td {
 
 #title {
 	display: inline-block;
-	font-weight: bold;
-	font-size: 32px;
+	font-size: 55px;
 	font-family: 'Trebuchet MS';
 	text-shadow; 0px 2px black;
 	margin: 0 20px;
+	height: 50px;
+}
+
+#title > * {
+	height: inherit;
 }
 
 .slick-prev:before,
@@ -576,11 +586,15 @@ td {
 .slider-item {
 	height: 240px;
 	margin: 10px;
-	padding: 10px;
 }
 
 .slider-item .content-wrapper {
 	height: auto;
+}
+
+.slider-item .pre-content,
+.slider-item .content {
+	vertical-align: middle;
 }
 
 .portfolio-item-title {
@@ -588,12 +602,16 @@ td {
 	font-size: 24px;
 	font-family: arial;
 	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
 }
 
 .portfolio-item-desc {
 	margin-top: 10px;
 	text-align: justify;
 	font-family: arial;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .slick-slide.slider-item > div {
