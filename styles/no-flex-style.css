@@ -3,6 +3,10 @@
 	src: url('./../resources/Roboto-Thin.ttf');
 }
 
+html, body {
+	height: 100%;
+}
+
 .outstaff-reasons-list:before,
 .outstaff-reasons-list:after,
 .prof-items:before,
@@ -297,6 +301,10 @@ td {
 	display: none;
 }
 
+.feat-slider {
+	height: 240px;
+}
+
 .block,
 .full-width,
 .feat-slider,
@@ -329,7 +337,63 @@ td {
 	/*height: 340px;*/
 }
 
+.slide .content {
+	position: relative;
+	white-space: nowrap;
+	text-align: center;
+	z-index: 4;
+}
 
+.slide .content > p {
+	display: inline-block;
+	z-index: 3;
+	text-align: center;
+	color: white;
+	white-space: normal;
+	vertical-align: middle;
+}
+
+.slide .content:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.slide.s1,
+.slide.s2,
+.slide.s3,
+.slide.s4,
+.slide.s5,
+.slide.s6 {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.slide.s1 {
+	background-image: url('./../images/full-screen-slider/s1.jpg');
+}
+
+.slide.s2 {
+	background-image: url('./../images/full-screen-slider/s2.jpg');
+}
+
+.slide.s3 {
+	background-image: url('./../images/full-screen-slider/s3.jpg');
+}
+
+.slide.s4 {
+	background-image: url('./../images/full-screen-slider/s4.jpg');
+}
+
+.slide.s5 {
+	background-image: url('./../images/full-screen-slider/s5.jpg');
+}
+
+.slide.s6 {
+	background-image: url('./../images/full-screen-slider/s6.jpg');
+}
 .block.contact-us {
 	height: auto;
 }
@@ -353,9 +417,45 @@ td {
 
 }
 
-.block.best-solution {
+/*.block.best-solution {
 	height: 700px;
 	background-color: rgba(55,55,64,0.44);
+}*/
+.block.best-solution {
+	height: 700px;
+}
+
+.block.best-solution .slider {
+	margin: 0;
+	height: 100%;
+}
+
+.block.best-solution .slider .slide {
+	height: 100%;
+	width: 100%;
+}
+
+.block.best-solution .slider .slick-list,
+.block.best-solution .slider .slick-track {
+	height: 100%;
+}
+
+.block.best-solution .slider .slick-track:before {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: absolute;
+	background-color: rgba(55,55,58,0.8);
+}
+
+.block.best-solution .slick-prev {
+	left: 50px;
+	z-index: 1;
+}
+
+.block.best-solution .slick-next {
+	right: 50px;
+	z-index: 1;
 }
 
 .block.replenish-a-team,
@@ -365,8 +465,8 @@ td {
 
 .block.we-can-find,
 .block.cost-plus-model,
-.block.turnkey-projects,
-.block.best-solution:before {
+.block.turnkey-projects
+/*.block.best-solution:before*/ {
 	background-color: #373740;
 }
 
@@ -399,13 +499,13 @@ td {
 .slider-item:hover,
 .slider-item.hovered {
 	background-color: white;
-	color: black;
+	color: black !important;
 }
 
 .block.title:before,
 .block.title:after,
-.block.best-solution:before,
-.block.best-solution:after,
+/*.block.best-solution:before,
+.block.best-solution:after,*/
 .block.get-detailed-proposal:before,
 .block.get-detailed-proposal:after  {
 	content: '';
@@ -424,7 +524,7 @@ td {
 }
 
 .block.title:before,
-.block.best-solution:after,
+/*.block.best-solution:after,*/
 .block.get-detailed-proposal:after,
 .block.how-avoid.image,
 .block.simple-words.image,
@@ -447,9 +547,9 @@ td {
 	opacity: 0.66;
 }
 
-.block.best-solution:after {
+/*.block.best-solution:after {
 	background-image: url('./../images/block-6-background.png');
-}
+}*/
 
 .block.get-detailed-proposal:before {
 	background-color:#302f36;
@@ -514,9 +614,34 @@ td {
 	width: 100%;
 }
 
+.proposal-item p.feat-p {
+	white-space: pre-line;
+	min-height: 55px;
+}
+
+.proposal-item span.feat-p {
+	white-space: pre-line;
+	display: inline-block;
+	height: 40px;
+	margin-top: 20px;
+}
+
+.proposal-item .proposal-img {
+	min-height: 73px;
+}
+
 .proposal-item {
 	text-align: center;
-	margin: 20px 5% !important;
+	width: 47.5% !important;
+	margin: 20px 0 !important;
+}
+
+.proposal-item:first-child {
+	margin-right: 2.5% !important;
+}
+
+.proposal-item:last-child {
+	margin-left: 2.5% !important;
 }
 
 .contact-item .rounded {
@@ -539,9 +664,54 @@ td {
 	vertical-align: middle;
 }
 
-.slider-item {
-	width: 32%;
-	height: inherit;
+.slick-slide.slider-item {
+	height: 240px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.slider-item .content {
+	width: 90%;
+	font-size: 16px;
+	color: white;
+	height: auto;
+}
+
+.slider-item:hover .content {
+	color: black;
+}
+
+.slider-item .content-wrapper {
+	height: auto;
+}
+
+.portfolio-item-title {
+	font-weight: bold;
+	font-size: 24px;
+	font-family: arial;
+}
+
+.portfolio-item-desc {
+	margin-top: 10px;
+	text-align: justify;
+	font-family: arial;
+}
+
+.slick-slide.slider-item > div {
+	height: 100%;
+	text-align: center;
+}
+
+.slick-slide.slider-item > div > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slick-slide.slider-item > div:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 .other-proposals-items {
@@ -811,16 +981,34 @@ td {
 	padding:21px 31px;
 }
 
-.feat-slider-ctrl-items {
-	width: 32%;
+.feat-slider-btn:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.feat-slider-btn .arrow {
 	margin: auto;
-	justify-content: space-between;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.feat-slider-controls {
+	padding-top: 15px;
+}
+
+.feat-slider-ctrl-items {
+	margin: auto;
+	text-align: center;
 }
 
 .feat-slider-btn {
 	border: 3px solid #282828;
 	padding: 0 31px;
 	height: 60px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .feat-slider-btn.left,
@@ -961,10 +1149,27 @@ td {
 	display: inline-block;
 }
 
-.real-contacts,
+.real-contacts {
+	width: 80%;
+	height: inherit;
+}
+
+.real-contacts > div {
+	display: inline-block;
+}
+
+.real-contacts div > * {
+	vertical-align: middle;
+}
+
+.block.footer:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .social-profiles {
-	margin: 0;
-	width: 50%;
+	width: 20%;
 	height: inherit;
 }
 
@@ -972,21 +1177,18 @@ td {
 	text-align: right;
 }
 
-.real-contacts .li-2 {
-	margin-right: 5%;
-	width: 45%;
-	height: 100%;
+.social-profiles > * {
+	vertical-align: middle;
 }
 
-.real-contacts .li-2:before,
+.real-contacts > div:first-child {
+	margin-right: 10px;
+}
+
+.real-contacts:before,
 .social-profiles:before {
 	content: '';
 	display: inline-block;
 	height: 100%;
-	vertical-align: middle;
-}
-
-.real-contacts .li-2 > *,
-.social-profiles > * {
 	vertical-align: middle;
 }
