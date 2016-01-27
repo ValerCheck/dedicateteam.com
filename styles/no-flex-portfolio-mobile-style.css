@@ -31,18 +31,6 @@
 		margin: 0;
 	}	
 
-	.r-list .s-li-2 {
-		width: 50%;
-	}
-
-	.r-list .s-li-3 {
-		width: 33.33%;
-	}	
-
-	.r-list .s-li-4 {
-		width: 25%;
-	}
-
 	.contact-item,
 	.prof-item {
 		margin-top: 30px !important;
@@ -111,32 +99,7 @@
 
 	.r-list .m-li-1 {
 		width: 100% !important;
-	}	
-
-	.r-list .m-li-2 {
-		width: 50%;
 	}
-
-	.r-list .li-4.m-li-2 {
-		width: 45%;
-	}
-
-	.r-list .li-4.m-li-2:nth-child(2n) {
-		margin: 0 0 0 2.5%;
-	}
-
-	.r-list .li-4.m-li-2:nth-child(2n+1) {
-		margin: 0 2.5% 0 0;
-	}
-
-	.r-list .m-li-3 {
-		width: 33.33%;
-	}	
-
-	.r-list .m-li-4 {
-		width: 25%;
-	}
-
 }
 
 @media screen and (max-device-width: 970px), screen and (max-width: 970px) and (min-width: 531px) {
@@ -177,32 +140,7 @@
 
 	.r-list .m-li-1 {
 		width: 100% !important;
-	}	
-
-	.r-list .m-li-2 {
-		width: 50%;
 	}
-
-	.r-list .li-4.m-li-2 {
-		width: 45%;
-	}
-
-	.r-list .li-4.m-li-2:nth-child(2n) {
-		margin: 0 0 0 2.5%;
-	}
-
-	.r-list .li-4.m-li-2:nth-child(2n+1) {
-		margin: 0 2.5% 0 0;
-	}
-
-	.r-list .m-li-3 {
-		width: 33.33%;
-	}	
-
-	.r-list .m-li-4 {
-		width: 25%;
-	}
-
 }
 
 @media only screen and (max-device-width: 850px), screen and (max-width: 850px) {
@@ -258,41 +196,12 @@
 		text-align: center;
 	}
 
-	.how-it-works .row-1,
-	.how-it-works .row-3,
-	.why-do-you-like-us .row-1,
-	.why-do-you-like-us .row-3,
-	.how-it-works .row-2,
-	.how-it-works .row-4,
-	.why-do-you-like-us .row-2,
-	.why-do-you-like-us .row-4 {
-		height: auto;
-	}
-
 	.table, .tr, .td {
 		display: block;
 	}
 
-	.block.about-outstaffing > * {
-		height: auto;
-	}
-
-	.block.simple-words,
-	.block.how-avoid {
-		display: block;
-		float: none;
-	}
-
 	.height-auto {
 		height: auto !important;
-	}
-
-	.img-what-is-it {
-		border: 0 !important;
-	}
-
-	.v-center.content {
-		margin: auto;
 	}
 
 	.block.content .ruler {
