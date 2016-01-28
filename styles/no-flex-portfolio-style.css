@@ -405,7 +405,9 @@ a.feat-button {
 }
 
 .real-contacts {
-	width: 80%;
+	/*width: 80%;*/
+	width: 100%;
+	text-align: center;
 	height: inherit;
 }
 
@@ -424,7 +426,8 @@ a.feat-button {
 }
 
 .social-profiles {
-	width: 20%;
+	/*width: 20%;*/
+	display: none;
 	height: inherit;
 }
 
