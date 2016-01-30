@@ -539,11 +539,7 @@
 		width:100%;
 		height: 100%;
 		z-index: -1;
-	}	
-
-	.block.title:before {
-		background-image: url('./../images/header_back.png');
-	}	
+	}
 
 	.block.title:before,
 	/*.block.best-solution:after,*/
@@ -571,11 +567,7 @@
 	.block.get-detailed-proposal:before {
 		background-color:#302f36;
 		opacity: 0.66;
-	}	
-
-	.block.get-detailed-proposal:after {
-		background-image: url('./../images/block-9-background.png');
-	}	
+	}
 
 	.block.content{
 		height:auto;
@@ -808,10 +800,6 @@
 		margin-top: 40px;
 	}	
 
-	.slider-item:not(.mobile-active){
-		display: none;
-	}
-
 	.feat-slider-btn,
 	.feat-button {
 		white-space: normal;
@@ -826,7 +814,6 @@
 	.feat-slider-ctrl-items {
 		width: 100%;
 		margin: auto;
-		justify-content: space-between;
 	}	
 
 	.feat-slider-btn {
@@ -896,47 +883,7 @@
 	.block.why-do-you-like-us.image-2,
 	.block.why-do-you-like-us.image-4 {
 		height: 220px;
-	} 	
-
-	.block.how-it-works.image-1 {
-		background-image: url('./../images/block-5-img-1.png');
-	}	
-
-	.block.how-it-works.image-2 {
-		background-image: url('./../images/block-5-img-2.png');
-	}	
-
-	.block.how-it-works.image-3 {
-		background-image: url('./../images/block-5-img-3.png');
-	}	
-
-	.block.how-it-works.image-4 {
-		background-image: url('./../images/block-5-img-4.png');
-	}	
-
-	.block.why-do-you-like-us.image-1 {
-		background-image: url('./../images/block-8-img-1.png');
-	}	
-
-	.block.why-do-you-like-us.image-2 {
-		background-image: url('./../images/block-8-img-2.png');
-	}	
-
-	.block.why-do-you-like-us.image-3 {
-		background-image: url('./../images/block-8-img-3.png');
-	}	
-
-	.block.why-do-you-like-us.image-4 {
-		background-image: url('./../images/block-8-img-4.png');
-	}	
-
-	.block.how-avoid.image {
-		background-image: url('./../images/block-2-avoid.png');
-	}	
-
-	.block.simple-words.image {
-		background-image: url('./../images/block-2-simple-words.png');
-	}	
+	}
 
 	.pos-rel {
 		position: relative;
