@@ -1023,10 +1023,14 @@ table.what-is-it {
 	margin-top: 46px;
 }
 
+.subtitle-l1.light {
+	font-family: 'Roboto Light';
+}
+
 .subtitle-l1,
 .subtitle-l2 {
 	margin: 2px;
-	font-family: 'Roboto Light';
+	font-family: 'Roboto Thin';
 }
 
 .arrow {
