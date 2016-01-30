@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
-	$('.best-solution .slider').slick({
+	$(".best-solution .slider").nerveSlider({
+		sliderWidth: "100%",
+    	sliderHeight: "inherit",
+    	showTimer: false,
+    	sliderAutoPlay: true,
+    	waitForLoad: true,
+    	showDots: true,
+    	preDelay: 0,
+    	slideTransitionDelay: 5000,
+    	slideTransitionSpeed: 1000,
+    	slideTransition: "slide"
+	});
+	/*$('.best-solution .slider').slick({
 		autoplay: true,
 		swipe: false,
 		autoplaySpeed: 5000,
@@ -25,7 +37,7 @@ $(document).ready(function() {
 		      	}
 		    }
 	  	]
-	});
+	});*/
 
 	$('.feat-slider').slick({
 		centerMode: true,
