@@ -463,7 +463,18 @@ table.what-is-it {
 
 }
 
-.best-solution .content .best-title {
+.best-solution .title-content {
+	width: auto;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	color: white;
+	position: absolute;
+	margin-top: 50px;
+}
+
+.best-solution .title-content .best-title {
 	width: 70%;
 	margin: auto;
 }

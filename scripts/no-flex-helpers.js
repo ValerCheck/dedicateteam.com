@@ -8,12 +8,12 @@ $(document).ready(function() {
 		slidesToShow: 1,
 		arrows: false,
 		dots: true,
+		centerPadding: 0,
 		responsive: [
     		{
-	    		breakpoint: 860,
+    			breakpoint: 860,
 		      	settings: {
 		        	arrows: false,
-		        	centerMode: true,
 		        	slidesToShow: 1
 		    	}
 		    },
@@ -21,7 +21,6 @@ $(document).ready(function() {
 		      	breakpoint: 700,
 		      	settings: {
 		        	arrows: false,
-		        	centerMode: true,
 		        	slidesToShow: 1
 		      	}
 		    }

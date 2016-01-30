@@ -22,6 +22,14 @@
 		margin: 0;
 	}	
 
+	.best-title .feat-h1 {
+		font-size: 16px !important;
+	}
+
+	.slide .content > p {
+		margin-top: 50% !important;
+	}
+
 	.input {
 		width: 90%;
 		padding: 0 5%;
@@ -231,6 +239,18 @@
 
 	.block.content .ruler {
 		margin-top: 0;
+	}
+
+	.best-solution .title-content {
+		padding-top: 0 !important;
+	}
+
+	.best-title .feat-h1 {
+		font-size: 20px;
+	}
+
+	.slide .content > p {
+		margin-top: 30%;
 	}
 
 	.title-content {
@@ -464,7 +484,7 @@
 	}
 
 	.block.best-solution {
-		height: 40%;
+		height: 75%;
 	}
 
 	.block.best-solution .height-inherit {
