@@ -1,11 +1,10 @@
 $(document).ready(function() {
 
 	$('.best-solution .slider').slick({
-		centerMode: true,
 		autoplay: true,
-		centerPadding: 0,
+		swipe: false,
 		autoplaySpeed: 5000,
-		speed: 1000,
+		speed: 500,
 		slidesToShow: 1,
 		arrows: false,
 		dots: true,

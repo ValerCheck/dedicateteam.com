@@ -119,6 +119,14 @@
 		white-space: normal;
 	}
 
+	.reason-desc {
+		font-size: 14px !important;
+	}
+
+	.replenish-a-team .block.content {
+		width: 90% !important;
+	}
+
 	.r-list .m-li-1 {
 		width: 100% !important;
 	}	
@@ -725,21 +733,6 @@
 	.subtitle-l2 {
 		margin: 2px;
 		font-family: 'Roboto Thin';
-	}	
-
-	.arrow {
-		width: 18px;
-		height: 29px;
-	}	
-
-	.arrow.left {
-		background-image: url('./../images/feat-slider-left.png');
-		background-repeat: no-repeat;
-	}	
-
-	.arrow.right {
-		background-image: url('./../images/feat-slider-right.png');
-		background-repeat: no-repeat;
 	}	
 
 	.subtitle-l1 {
