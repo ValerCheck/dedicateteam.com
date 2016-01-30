@@ -225,6 +225,7 @@ table {
 .img-what-is-it #simple-words {
 	background-image: url('./../images/dedicate-figures.png');
 	background-repeat: no-repeat;
+	margin: auto;
 }
 
 .img-what-is-it #simple-words{
@@ -608,7 +609,8 @@ table.what-is-it {
 .v-center,
 .content {
 	height:100%;
-	width: 64.22%;
+	/*width: 64.22%;*/
+	width: 70%;
 }
 
 .block.content {

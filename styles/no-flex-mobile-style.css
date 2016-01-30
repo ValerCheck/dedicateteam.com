@@ -156,7 +156,27 @@
 	}
 }
 
-@media only screen and (max-device-width: 850px), screen and (max-width: 850px) {
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+	
+	.title-container {
+		height: 20% !important;
+	}
+
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+    	top: 20% !important;
+    	height: 70% !important;
+	}
+
+	.form_window {
+    	top: 0;
+    	height: 100%;
+    	left: 50%;
+    	width: 320px;
+    	padding: 0 50px 0 50px;
+	}
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: portrait), screen and (max-width: 850px) {
 	
 	@-ms-viewport {
 		width: device-width;
@@ -169,6 +189,10 @@
 	@viewport {
 		width: device-width;
 		/*user-zoom: fixed;*/
+	}
+
+	.replenish-a-team .block.content {
+		width: 90% !important;
 	}
 
 	.real-contacts div {
@@ -185,7 +209,13 @@
 
 	.cost-plus-item.td {
 		text-align: center !important;
-		width:100%;
+		width:100% !important;
+	}
+
+	.cost-plus-item,
+	.cost-plus-item > div {
+		margin-left: auto !important;
+		margin-right: auto !important;
 	}
 
 	.cost-plus-item.td.feat-p {
@@ -211,8 +241,9 @@
 		height: auto;
 	}
 
-	.table, .tr, .td {
-		display: block;
+	.table, .tr, .td,
+	.v-center {
+		display: block !important;
 	}
 
 	.block.about-outstaffing > * {
@@ -235,6 +266,11 @@
 
 	.v-center.content {
 		margin: auto;
+		width: 80%;
+	}
+
+	*[class^='feat'] {
+		word-break: break-word;
 	}
 
 	.block.content .ruler {
@@ -392,7 +428,7 @@
 	}
 
 	.top-menu.no-mobile {
-		display: none;
+		display: none !important;
 	}
 
 	.height-inherit {
