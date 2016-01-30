@@ -566,7 +566,7 @@ table.what-is-it {
 
 .block.title:before {
 	height: inherit;
-	background-image: url('./../images/header_back.png');
+	background-image: url('./../images/header_back.jpg');
 }
 
 .block.title:before,
@@ -593,17 +593,13 @@ table.what-is-it {
 	opacity: 0.66;
 }
 
-/*.block.best-solution:after {
-	background-image: url('./../images/block-6-background.png');
-}*/
-
 .block.get-detailed-proposal:before {
 	background-color:#302f36;
 	opacity: 0.66;
 }
 
 .block.get-detailed-proposal:after {
-	background-image: url('./../images/block-9-background.png');
+	background-image: url('./../images/block-9-background.jpg');
 }
 
 .v-center,
@@ -1201,43 +1197,43 @@ a.feat-slider-btn {
 } 
 
 .block.how-it-works.image-1 {
-	background-image: url('./../images/block-5-img-1.png');
+	background-image: url('./../images/block-5-img-1.jpg');
 }
 
 .block.how-it-works.image-2 {
-	background-image: url('./../images/block-5-img-2.png');
+	background-image: url('./../images/block-5-img-2.jpg');
 }
 
 .block.how-it-works.image-3 {
-	background-image: url('./../images/block-5-img-3.png');
+	background-image: url('./../images/block-5-img-3.jpg');
 }
 
 .block.how-it-works.image-4 {
-	background-image: url('./../images/block-5-img-4.png');
+	background-image: url('./../images/block-5-img-4.jpg');
 }
 
 .block.why-do-you-like-us.image-1 {
-	background-image: url('./../images/block-8-img-1.png');
+	background-image: url('./../images/block-8-img-1.jpg');
 }
 
 .block.why-do-you-like-us.image-2 {
-	background-image: url('./../images/block-8-img-2.png');
+	background-image: url('./../images/block-8-img-2.jpg');
 }
 
 .block.why-do-you-like-us.image-3 {
-	background-image: url('./../images/block-8-img-3.png');
+	background-image: url('./../images/block-8-img-3.jpg');
 }
 
 .block.why-do-you-like-us.image-4 {
-	background-image: url('./../images/block-8-img-4.png');
+	background-image: url('./../images/block-8-img-4.jpg');
 }
 
 .block.how-avoid.image {
-	background-image: url('./../images/block-2-avoid.png');
+	background-image: url('./../images/block-2-avoid.jpg');
 }
 
 .block.simple-words.image {
-	background-image: url('./../images/block-2-simple-words.png');
+	background-image: url('./../images/block-2-simple-words.jpg');
 }
 
 .pos-rel {
