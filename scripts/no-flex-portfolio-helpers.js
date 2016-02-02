@@ -5,7 +5,7 @@ $(document).ready(function() {
     		$('.form_window').fadeIn().addClass("windactiv");
     		$(".overlay").fadeIn();
 	  	});
-	  	$(".mask, .bw_close").click(function(){
+	  	$(".overlay, .bw_close").click(function(){
 	  		$(".windactiv").fadeOut();
 	  		$(".overlay").fadeOut();
 	  });

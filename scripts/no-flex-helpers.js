@@ -132,15 +132,31 @@ $(document).ready(function() {
     		$('.form_window').fadeIn().addClass("windactiv");
     		$(".overlay").fadeIn();
 	  	});
-	  	$(".mask, .bw_close").click(function(){
+	  	$(".overlay, .bw_close").click(function(){
 	  		$(".windactiv").fadeOut();
 	  		$(".overlay").fadeOut();
 	  });
 	});
-
 });
 
 function scrollToId(aid){
 	var aTag = $("div#" + aid + "");
 	$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+function sendRequest(){
+	$.ajax({
+		type: "POST",
+		url: "scripts/sendRequest.php",
+		data: {
+			name: $('.form_just input[name="name"]').val(),
+			comp: $('.form_just input[name="comp"]').val(),
+			spec: $('.form_just input[name="spec"]').val(),
+			email: $('.form_just input[name="email"]').val(),
+			phone: $('.form_just input[name="phone"]').val()
+		}
+	})
+	.done(function(msg){
+		alert("Mail sent: " + msg);
+	});
 }

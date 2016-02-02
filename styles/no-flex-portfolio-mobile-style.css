@@ -550,12 +550,8 @@
 	.contact-item .rounded {
 		height: 167px;
 		width: 167px;
-		border: 3px solid #ff7111;
+		border: 2px solid #ff7111;
 		border-radius: 50%;
-	}
-
-	.contact-item {
-		-webkit-box-align: center;	
 	}
 
 	.slider-item .pre-content,
@@ -845,12 +841,6 @@
 		justify-content: space-between;
 	}	
 
-	.feat-slider-btn {
-		border: 3px solid #282828;
-		padding: 0 31px;
-		height: 60px;
-	}	
-
 	.feat-slider-btn.left,
 	.feat-slider-btn.right {
 		width: 60px;
@@ -863,7 +853,7 @@
 	}	
 
 	.feat-button {
-		border: 3px solid #fd700e;
+		border: 2px solid #fd700e;
 	}	
 
 	.feat-button:hover,
