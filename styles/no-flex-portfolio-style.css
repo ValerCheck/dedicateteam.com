@@ -45,6 +45,34 @@ a.feat-button {
 	width: 100%;
 }
 
+.proposal-img > div,
+.rounded > div {
+	margin: auto;
+	background-image: url('./../images/dedicate-figures.png');
+	background-repeat: no-repeat;
+}
+
+.rounded > div {
+	display: inline-block;
+}
+
+.rounded #img-1 {
+	width: 99px;
+	height: 79px;
+	background-position: -297px -252px;
+}
+
+.rounded #img-2 {
+	width: 100px;
+	height: 85px;
+	background-position: -3px -404px;
+}
+
+.rounded #img-3 {
+	width: 98px;
+	height: 68px;
+	background-position: -237px -342px;
+}
 
 .table {
 	display: table;
