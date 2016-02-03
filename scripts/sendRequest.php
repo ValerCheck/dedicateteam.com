@@ -3,10 +3,10 @@
 	$fields_count = count($fields);
 	$post_keys = array_keys($_POST);
 
-	$to = 'klevalera@gmail.com';
+	$to = 'odc@8dedicate.com';
 	$subject = "8Dedicate Landing Request";
 	$message = "Request from 8Dedicate.com\r\n\r\n";
-	$headers = 'From: ' . $_POST['email'] . "\r\n";
+	$headers = "From: {$_POST['name']} <{$_POST['email']}>\r\n";
 	$headers .= "Content-type: text/plain; charset=utf-8\r\n";
 
 	for($i=0;$i < $fields_count;$i++){
