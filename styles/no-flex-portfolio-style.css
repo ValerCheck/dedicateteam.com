@@ -510,6 +510,24 @@ a.feat-button {
 	cursor:pointer
 }
 
+.form_just {
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+	overflow: hidden;
+	height: 100%;
+}
+
+.form-loader {
+	height: 0;
+	opacity: 0;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
 .overlay {
 	position:fixed;
 	background-image:url('./../images/overlay.png');
@@ -537,4 +555,16 @@ a.feat-button {
 	outline: none;
 	margin: 0 0 10px 0;
 	font-family: 'Roboto', sans-serif;
+}
+
+.input.emptyField {
+	background:#ffcccc;
+}
+
+#form-message {
+	display: none;
+	margin: 0 0 10px 0;
+	font-family: arial;
+	padding: 0;
+	text-transform: uppercase;
 }

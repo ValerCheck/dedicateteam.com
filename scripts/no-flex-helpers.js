@@ -6,38 +6,12 @@ $(document).ready(function() {
     	showTimer: false,
     	sliderAutoPlay: true,
     	waitForLoad: true,
-    	showDots: true,
+    	showDots: false,
     	preDelay: 0,
     	slideTransitionDelay: 5000,
     	slideTransitionSpeed: 1000,
     	slideTransition: "slide"
 	});
-	/*$('.best-solution .slider').slick({
-		autoplay: true,
-		swipe: false,
-		autoplaySpeed: 5000,
-		speed: 500,
-		slidesToShow: 1,
-		arrows: false,
-		dots: true,
-		centerPadding: 0,
-		responsive: [
-    		{
-    			breakpoint: 860,
-		      	settings: {
-		        	arrows: false,
-		        	slidesToShow: 1
-		    	}
-		    },
-		    {
-		      	breakpoint: 700,
-		      	settings: {
-		        	arrows: false,
-		        	slidesToShow: 1
-		      	}
-		    }
-	  	]
-	});*/
 
 	$('.feat-slider').slick({
 		centerMode: true,
@@ -145,6 +119,10 @@ function scrollToId(aid){
 }
 
 function sendRequest(){
+
+	var form = $('.form_just')[0];
+	if (!validateForm(form)) return;
+
 	$.ajax({
 		type: "POST",
 		url: "scripts/sendRequest.php",
@@ -154,9 +132,43 @@ function sendRequest(){
 			spec: $('.form_just input[name="spec"]').val(),
 			email: $('.form_just input[name="email"]').val(),
 			phone: $('.form_just input[name="phone"]').val()
+		},
+		error: function(xhr, ajaxOptions, thrownError){
+			alert(xhr.responseText);
+			alert(thrownError);
+		},
+		beforeSend: function() {
+			$('.form_just').css({"height":"0","opacity":"0"});
+			$('.form-loader').css({"height":"64px","opacity":"1"});
+		},
+		complete: function(response) {
+			$('.form-loader').css({"height":"0","opacity":"0"});
+		},
+		success: function(response) {
+			$('.form-loader').css({"height":"0","opacity":"0"});
+			$('.form_just').trigger('reset');
+			$('.form_just').css({"height":"100%","opacity":"1"});
+			$('#form-message').html(response);
+			$('#form-message').slideDown('fast', function() {
+				setTimeout(function(){$('#form-message').slideUp()}, 3000);	
+			});
 		}
 	})
-	.done(function(msg){
-		alert("Mail sent: " + msg);
-	});
+}
+
+function validateForm(form){
+	var result = true;
+	var fieldCount = form.length;
+	for(i=0; i < fieldCount; i++){
+		if (form[i].type == "text" && form[i].required == true) {
+			if (form[i].value == undefined || form[i].value == "") {
+				$(form[i]).addClass('emptyField');
+				result = false;
+			} else {
+				if ($(form[i]).hasClass('emptyField'))
+					$(form[i]).removeClass('emptyField');
+			}
+		}
+	}
+	return result;
 }

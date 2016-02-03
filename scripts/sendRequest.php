@@ -1,19 +1,22 @@
 <?php	
-	$name = $_POST['name'];
-	$comp = $_POST['comp'];
-	$spec = $_POST['spec'];
-	$phone = $_POST['phone'];
-	$email = $_POST['email'];
-	
+	$fields = array("Name", "Company", "Position","Email","Phone");
+	$fields_count = count($fields);
+	$post_keys = array_keys($_POST);
+
 	$to = 'klevalera@gmail.com';
-	$subject = "Test";
-	$message = 'FROM: ' . $name . ' Email: ' . $email;
-	$headers = 'From: ' . $email . "\r\n";
+	$subject = "8Dedicate Landing Request";
+	$message = "Request from 8Dedicate.com\r\n\r\n";
+	$headers = 'From: ' . $_POST['email'] . "\r\n";
 	$headers .= "Content-type: text/plain; charset=utf-8\r\n";
 
-	if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		mail($to,$subject,$message,$headers);
-		echo "Request was sent!";
+	for($i=0;$i < $fields_count;$i++){
+		$message .= "{$fields[$i]}: {$_POST[$post_keys[$i]]} \n";
+	}
+
+	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+		if(mail($to,$subject,$message,$headers))
+			echo "Request was sent!\r\n";
+		else echo "Request wasn't sent!";
 	} else {
 		echo "Invalid email. Please provide an correct an email.";
 	}
