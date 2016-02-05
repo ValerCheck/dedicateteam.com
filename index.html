@@ -766,31 +766,32 @@
 						</div>
 						<div class="feat-slider">
 
-							<div class="slider-item">
-								<div class="content-wrapper">
-									<div class="content">
-										<p class="portfolio-item-title">Dynamika.com.ua</p>
-										<p class="portfolio-item-desc"></p>
-									</div>
-								</div>
-							</div>
+							<?php
 
-							<div class="slider-item">
-								<div class="content-wrapper">
-									<div class="content">
-										<p class="portfolio-item-title">itsquiz.com</p>
-										<p class="portfolio-item-desc"></p>
-									</div>
-								</div>
-							</div>
+								$portfolio_images = array("portalbounce-v3 fit-width","cushiosxpress fit-width","force-management fit-width","pillowsxpress fit-width","contact-lens fit-width","viseven-clm half-width","ayuroma half-width","etovoditel half-width","hidrive half-width","prettynailshop half-width","runday half-width","sickweather half-width","skychat half-width","smartmoney half-width","pcec-logo","designer-handbag","mixed-wedding half-width","tintelingen","dynamika","findgood-company","coinmedia-logo","python","drukwerkservice","hivfriends","saraandodete","yoga","svenskt-tenn-logo","downsideup","itsquiz","viseven");
 
-							<div class="slider-item">
+								foreach($portfolio_images as $item){
+									$image_props = explode(" ", $item);
+									$class = (count($image_props) == 2) ? "class='{$image_props[1]}'" : "";
+									echo "<div class='slider-item'>
+											<div class='content-wrapper'>
+												<div class='content'>
+													<img {$class} src='./images/portfolio/{$image_props[0]}.png'/>
+												</div>
+											</div>
+										</div>";
+								}
+
+
+							?>
+
+							<!--<div class="slider-item">
 								<div class="content-wrapper">
 									<div class="content">
 										<p class="portfolio-item-title">Xjs</p>
 										<p class="portfolio-item-desc">
 											Spreadsheet engine fully written in JavaScript and optimized for maximum perfomance (up to 1mln cells). Allows to run MS Excel files directly in a browser or on a server 
-									</p>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -802,7 +803,7 @@
 										<p class="portfolio-item-desc"></p>
 									</div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 						<div class="feat-slider-controls">
 							<div class="feat-slider-ctrl-items">

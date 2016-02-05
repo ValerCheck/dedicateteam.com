@@ -851,6 +851,7 @@ table.what-is-it {
 
 .slider-item .content-wrapper {
 	height: auto;
+	overflow: hidden;
 }
 
 .portfolio-item-title {
@@ -1390,4 +1391,19 @@ a.feat-slider-btn {
 	font-family: arial;
 	padding: 0;
 	text-transform: uppercase;
+}
+
+.slider-item .content img {
+	-webkit-filter: drop-shadow(0 0 5px black);
+	-moz-filter: drop-shadow(0 0 5px black);
+	-o-filter: drop-shadow(0 0 5px black);
+	filter: drop-shadow(0 0 5px black);
+}
+
+.slider-item .content img.half-width {
+	width: 50%;
+}
+
+.slider-item .content img.fit-width {
+	width: 100%;
 }
