@@ -410,6 +410,29 @@ a.feat-button {
 	padding:21px 31px;
 }
 
+.slider-item .content-wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.slider-item .pre-content img {
+	height: 70%;
+}
+
+.slider-item .pre-content img.fit-width {
+	width: 70%;
+	height: auto;
+}
+
+.slider-item {
+	height: 250px;
+	width: 100%;
+}
+
+.slider-item .pre-content .content {
+	background-color: transparent;
+}
+
 .feat-button {
 	border: 2px solid #fd700e;
 }

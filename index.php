@@ -716,7 +716,7 @@
 										выполнить для вас проект "под ключ".
 
 									</p>
-									<a href="portfolio.html" target="_blank" class="feat-button black">Узнать больше</a>
+									<a href="portfolio.php" target="_blank" class="feat-button black">Узнать больше</a>
 								</div>								
 							</div>
 
@@ -768,49 +768,27 @@
 
 							<?php
 
-								$portfolio_images = array("portalbounce-v3 fit-width","cushiosxpress fit-width","force-management fit-width","pillowsxpress fit-width","contact-lens fit-width","viseven-clm half-width","ayuroma half-width","etovoditel half-width","hidrive half-width","prettynailshop half-width","runday half-width","sickweather half-width","skychat half-width","smartmoney half-width","pcec-logo","designer-handbag","mixed-wedding half-width","tintelingen","dynamika","findgood-company","coinmedia-logo","python","drukwerkservice","hivfriends","saraandodete","yoga","svenskt-tenn-logo","downsideup","itsquiz","viseven");
+								$portfolio_images = array("portalbounce-v3 fit-width","cushiosxpress fit-width","force-management fit-width","pillowsxpress fit-width","contact-lens fit-width","viseven-clm","ayuroma","etovoditel","hidrive","prettynailshop","runday","sickweather","skychat","smartmoney","pcec-logo fit-width","designer-handbag fit-width","mixed-wedding ","tintelingen fit-width","dynamika fit-width","findgood-company fit-width","coinmedia-logo fit-width","python fit-width","drukwerkservice","hivfriends","saraandodete","yoga","svenskt-tenn-logo","downsideup fit-width","itsquiz","viseven fit-width");
 
 								foreach($portfolio_images as $item){
 									$image_props = explode(" ", $item);
-									$class = (count($image_props) == 2) ? "class='{$image_props[1]}'" : "";
+									$class = (count($image_props) == 2) ? "{$image_props[1]}" : "";
 									echo "<div class='slider-item'>
 											<div class='content-wrapper'>
-												<div class='content'>
-													<img {$class} src='./images/portfolio/{$image_props[0]}.png'/>
+												<div class='content {$class}'>
+													<img class='{$class}' src='./images/portfolio/{$image_props[0]}.png'/>
 												</div>
 											</div>
 										</div>";
 								}
-
-
 							?>
-
-							<!--<div class="slider-item">
-								<div class="content-wrapper">
-									<div class="content">
-										<p class="portfolio-item-title">Xjs</p>
-										<p class="portfolio-item-desc">
-											Spreadsheet engine fully written in JavaScript and optimized for maximum perfomance (up to 1mln cells). Allows to run MS Excel files directly in a browser or on a server 
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="slider-item">
-								<div class="content-werapper">
-									<div class="content">
-										<p class="portfolio-item-title">Dynamika.com.ua</p>
-										<p class="portfolio-item-desc"></p>
-									</div>
-								</div>
-							</div>-->
 						</div>
 						<div class="feat-slider-controls">
 							<div class="feat-slider-ctrl-items">
 								<div class="feat-slider-btn left">
 									<div class="arrow left"></div>
 								</div>
-								<a href="portfolio.html" class="feat-slider-btn center">Показать все</a>
+								<a href="portfolio.php" class="feat-slider-btn center">Показать все</a>
 								<div class="feat-slider-btn right">
 									<div class="arrow right"></div>
 								</div>

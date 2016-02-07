@@ -21,22 +21,22 @@
 					</input>
 
 					<div class="x-container column hidden-menu">
-						<a href="index.html#what-is-it" class="x-item li">
+						<a href="index.php#what-is-it" class="x-item li">
 							Что это
 						</a>
-						<a href="index.html#why-profitably" class="x-item li">
+						<a href="index.php#why-profitably" class="x-item li">
 							Почему это выгодно
 						</a>
-						<a href="index.html#how-it-works" class="x-item li">
+						<a href="index.php#how-it-works" class="x-item li">
 							Как это работает
 						</a>
-						<a href="index.html#advantages" class="x-item li">
+						<a href="index.php#advantages" class="x-item li">
 							Преимущества
 						</a>
-						<a href="index.html#other-services" class="x-item li">
+						<a href="index.php#other-services" class="x-item li">
 							Другие услуги
 						</a>
-						<a href="index.html#contact-us" class="x-item li">
+						<a href="index.php#contact-us" class="x-item li">
 							Связаться
 						</a>
 					</div>
@@ -57,13 +57,13 @@
 					<div class="tr cell-height-auto top-menu no-mobile">
 						<div class="td top-menu height-auto">
 							<div class="x-container row">
-								<a href="index.html#what-is-it" class="x-item li">
+								<a href="index.php#what-is-it" class="x-item li">
 									Что это
 								</a>
-								<a href="index.html#why-profitably" class="x-item li">
+								<a href="index.php#why-profitably" class="x-item li">
 									Почему это выгодно
 								</a>
-								<a href="index.html#how-it-works" class="x-item li">
+								<a href="index.php#how-it-works" class="x-item li">
 									Как это работает
 								</a>
 							</div>
@@ -77,13 +77,13 @@
 							</div>	
 
 							<div class="x-container row">
-								<a href="index.html#advantages" class="x-item li">
+								<a href="index.php#advantages" class="x-item li">
 									Преимущества
 								</a>
-								<a href="index.html#other-services" class="x-item li">
+								<a href="index.php#other-services" class="x-item li">
 									Другие услуги
 								</a>
-								<a href="index.html#contact-us" class="x-item li">
+								<a href="index.php#contact-us" class="x-item li">
 									Связаться
 								</a>
 							</div>
@@ -101,7 +101,51 @@
 				</div>
 				<div class="portfolio-list">
 
-					<div class="slider-item">
+					<?php
+						$servername = "localhost";
+						$username = "valerii";
+						$password = "pass";
+						$dbname = "8dedicate";
+
+						$conn = new mysqli($servername, $username, $password, $dbname);
+
+						if ($conn->connect_error){
+							die("Connection failed: " . $conn->connection_error);
+						}
+
+						$sql = "SELECT Name, Description FROM portfolio";
+
+						$dbresult = $conn->query($sql);
+
+						$result = array();
+
+						if ($dbresult->num_rows > 0){
+							while($row = $dbresult->fetch_assoc()) {
+								$result[$row["Name"]] = $row["Description"];
+							}
+						}
+
+						$portfolio_images = array("portalbounce-v3 fit-width","cushiosxpress fit-width","force-management fit-width","pillowsxpress fit-width","contact-lens fit-width","viseven-clm","ayuroma","etovoditel","hidrive","prettynailshop","runday","sickweather","skychat","smartmoney","pcec-logo fit-width","designer-handbag fit-width","mixed-wedding ","tintelingen fit-width","dynamika fit-width","findgood-company fit-width","coinmedia-logo fit-width","python fit-width","drukwerkservice","hivfriends","saraandodete","yoga","svenskt-tenn-logo","downsideup fit-width","itsquiz","viseven fit-width");
+
+						foreach($portfolio_images as $item){
+							$image_props = explode(" ", $item);
+							$class = (count($image_props) == 2) ? "{$image_props[1]}" : "";
+							echo 
+							"<div class='slider-item'>
+								<div class='pre-content {$class}'>
+									<img class='{$class}' src='./images/portfolio/{$image_props[0]}.png'/>
+								</div>
+								<div class='content'>
+									<!--<p class='portfolio-item-title'>Dynamika.com.ua</p>-->
+									<p class='portfolio-item-desc'>
+										{$result[$image_props[0]]}
+									</p>
+								</div>
+							</div>";
+						}
+					?>
+
+					<!--<div class="slider-item">
 						<div class="pre-content">
 							<p class="portfolio-item-title">Dynamika.com.ua</p>
 						</div>
@@ -111,69 +155,7 @@
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
 							</p>
 						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="pre-content">
-							<p class="portfolio-item-title">itsquiz.com</p>
-						</div>
-						<div class="content">
-							<div>
-								<p class="portfolio-item-title">itsquiz.com</p>
-								<p class="portfolio-item-desc">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="pre-content">
-							<p class="portfolio-item-title">Dynamika.com.ua</p>
-						</div>
-						<div class="content">
-							<p class="portfolio-item-title">Dynamika.com.ua</p>
-							<p class="portfolio-item-desc">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-							</p>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="pre-content">
-							<p class="portfolio-item-title">itsquiz.com</p>
-						</div>
-						<div class="content">
-							<p class="portfolio-item-title">itsquiz.com</p>
-							<p class="portfolio-item-desc">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-							</p>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="pre-content">
-							<p class="portfolio-item-title">Dynamika.com.ua</p>
-						</div>
-						<div class="content">
-							<p class="portfolio-item-title">Dynamika.com.ua</p>
-							<p class="portfolio-item-desc">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-							</p>
-						</div>
-					</div>
-
-					<div class="slider-item">
-						<div class="pre-content">
-							<p class="portfolio-item-title">itsquiz.com</p>
-						</div>
-						<div class="content">
-							<p class="portfolio-item-title">itsquiz.com</p>
-							<p class="portfolio-item-desc">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. 
-							</p>
-						</div>
-					</div>
+					</div>-->
 
 				</div>
 			</div>
